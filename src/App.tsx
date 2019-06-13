@@ -1,25 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Store } from 'redux';
+import { Provider } from 'react-redux';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import GlobalStyle from './styled.globalstyle';
+import { H1, Nav, StyledNavLink } from './components/Styled';
+import LogoImg from './components/LogoImg';
+import NameCardsViewerContainer from './containers/NameCardsViewerContainer';
+import { NameCardCreateForm, NameCardUpdateForm } from './containers/NameCardEditFormContainer';
 
-const App: React.FC = () => {
+interface AppProps {
+  store: Store
+}
+
+const App: React.FC<AppProps> = ({ store }) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <BrowserRouter>
+        <>
+          <GlobalStyle />
+          <H1>
+            <span>Name cards viewer</span>
+            <LogoImg />
+          </H1>
+          <Nav>
+              <StyledNavLink to='/cards'>All cards</StyledNavLink>
+              <StyledNavLink to='/add'>Add card</StyledNavLink>
+          </Nav>
+          <Switch>
+            <Route path="/cards" exact component={NameCardsViewerContainer} />
+            <Route path="/cards/:id" component={NameCardUpdateForm} />
+            <Route path="/add" component={NameCardCreateForm} />
+            <Redirect to="/cards" />
+          </Switch>
+        </>
+      </BrowserRouter>
+    </Provider>
   );
 }
 
