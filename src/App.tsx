@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import GlobalStyle from './styled.globalstyle';
 import { H1, Nav, StyledNavLink } from './components/Styled';
-import LogoImg from './components/LogoImg';
+import LogoImage from './components/LogoImage';
 import NameCardsViewerContainer from './containers/NameCardsViewerContainer';
 import { NameCardCreateForm, NameCardUpdateForm } from './containers/NameCardEditFormContainer';
 
@@ -20,7 +20,7 @@ const App: React.FC<AppProps> = ({ store }) => {
           <GlobalStyle />
           <H1>
             <span>Name cards viewer</span>
-            <LogoImg />
+            <LogoImage />
           </H1>
           <Nav>
               <StyledNavLink to='/cards'>All cards</StyledNavLink>
