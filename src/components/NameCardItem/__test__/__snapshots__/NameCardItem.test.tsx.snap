@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NameCardItem should render without crash 1`] = `
+<li
+  class="list-group-item"
+>
+  <dt>
+    test
+  </dt>
+  <dd
+    class="sc-bdVaJa bNqPsR"
+  >
+    test
+  </dd>
+</li>
+`;

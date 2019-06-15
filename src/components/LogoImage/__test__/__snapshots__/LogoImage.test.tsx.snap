@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppNav should render without crash 1`] = `
+<img
+  alt="logo"
+  aria-hidden="true"
+  height="80"
+  role="presentation"
+  src="logo.svg"
+  width="80"
+/>
+`;

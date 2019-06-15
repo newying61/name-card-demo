@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppNav should render without crash 1`] = `
+<div
+  class="sc-bxivhb jNfJqR"
+>
+  <ul
+    class="list-group list-group-flush"
+  >
+    <li
+      class="list-group-item"
+    >
+      <dt>
+        First name
+      </dt>
+      <dd
+        class="sc-bdVaJa bNqPsR"
+      >
+        test
+      </dd>
+    </li>
+    <li
+      class="list-group-item"
+    >
+      <dt>
+        Last name
+      </dt>
+      <dd
+        class="sc-bdVaJa bNqPsR"
+      >
+        test
+      </dd>
+    </li>
+    <li
+      class="list-group-item"
+    >
+      <dt>
+        Date of birrth
+      </dt>
+      <dd
+        class="sc-bdVaJa bNqPsR"
+      >
+        2019-01-01
+      </dd>
+    </li>
+  </ul>
+  <div
+    class="sc-htpNat kquAIx"
+  >
+    <button
+      class="sc-bwzfXH yvzhI btn btn-primary"
+      type="button"
+    >
+      Edit
+    </button>
+    <button
+      class="sc-bwzfXH yvzhI btn btn-danger"
+      type="button"
+    >
+      Delete
+    </button>
+  </div>
+</div>
+`;

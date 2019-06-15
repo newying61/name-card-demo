@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppHeader should render without crash 1`] = `
+<h1
+  class="sc-htpNat gWfLTp"
+>
+  <span>
+    Name cards viewer
+  </span>
+  <img
+    alt="logo"
+    aria-hidden="true"
+    height="80"
+    role="presentation"
+    src="logo.svg"
+    width="80"
+  />
+</h1>
+`;

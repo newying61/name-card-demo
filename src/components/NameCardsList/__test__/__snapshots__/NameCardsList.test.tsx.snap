@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NameCardsList should render without crash when nameCards 1`] = `
+<div
+  class="sc-bdVaJa eYASFs"
+>
+  <div
+    class="sc-ifAKCX plnT"
+  >
+    <ul
+      class="list-group list-group-flush"
+    >
+      <li
+        class="list-group-item"
+      >
+        <dt>
+          First name
+        </dt>
+        <dd
+          class="sc-bwzfXH eIjNIe"
+        >
+          test
+        </dd>
+      </li>
+      <li
+        class="list-group-item"
+      >
+        <dt>
+          Last name
+        </dt>
+        <dd
+          class="sc-bwzfXH eIjNIe"
+        >
+          test
+        </dd>
+      </li>
+      <li
+        class="list-group-item"
+      >
+        <dt>
+          Date of birrth
+        </dt>
+        <dd
+          class="sc-bwzfXH eIjNIe"
+        >
+          2019/01/01
+        </dd>
+      </li>
+    </ul>
+    <div
+      class="sc-bxivhb jcdCai"
+    >
+      <button
+        class="sc-htpNat eZpMOu btn btn-primary"
+        type="button"
+      >
+        Edit
+      </button>
+      <button
+        class="sc-htpNat eZpMOu btn btn-danger"
+        type="button"
+      >
+        Delete
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`NameCardsList should render without crash when nameCards list is empty 1`] = `
+<div>
+  No cards
+</div>
+`;
+
+exports[`NameCardsList should render without crash when nameCards list is null 1`] = `
+<div>
+  No cards
+</div>
+`;

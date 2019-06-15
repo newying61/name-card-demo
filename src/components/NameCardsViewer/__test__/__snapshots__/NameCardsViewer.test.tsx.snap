@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppNav should render without crash 1`] = `
+<div
+  class="sc-bdVaJa cAxzPl"
+>
+  <div
+    class="form-group"
+  >
+    <label
+      class="form-label"
+      for="search-box"
+    >
+      Search by name
+    </label>
+    <input
+      class="sc-bZQynM clTOgf form-control"
+      id="search-box"
+      name="searchBox"
+      placeholder=""
+      type="text"
+      value=""
+    />
+  </div>
+  <div>
+    No cards
+  </div>
+</div>
+`;

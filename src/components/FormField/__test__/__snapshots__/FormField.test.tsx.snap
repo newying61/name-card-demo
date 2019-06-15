@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormField should render without crash 1`] = `
+<div
+  class="form-group"
+>
+  <label
+    class="form-label"
+    for="test-field"
+  >
+    test label
+  </label>
+  <input
+    class="sc-bdVaJa btHEdo form-control"
+    id="test-field"
+    name="test"
+    placeholder="test"
+    type="text"
+    value="test"
+  />
+  <div
+    class="invalid-feedback"
+  />
+</div>
+`;

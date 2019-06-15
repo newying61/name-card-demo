@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppNav should render without crash 1`] = `
+<nav
+  class="sc-bxivhb gCIOfD"
+>
+  <a
+    class="sc-ifAKCX jvljLJ"
+    href="/cards"
+  >
+    All cards
+  </a>
+  <a
+    class="sc-ifAKCX jvljLJ"
+    href="/add"
+  >
+    Add card
+  </a>
+</nav>
+`;
