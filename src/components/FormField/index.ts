@@ -1,3 +1,3 @@
-import InputField from './InputField';
+import FormField from './FormField';
 
-export default InputField;
+export default FormField;

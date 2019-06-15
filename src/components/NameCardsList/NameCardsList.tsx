@@ -9,7 +9,11 @@ interface NameCardsListProps {
   onDelete: (card: NameCardType) => void;
 }
 
-const NameCardsList: React.FC<NameCardsListProps> = ({ nameCards, onEdit, onDelete }) => {
+const NameCardsList: React.FC<NameCardsListProps> = React.memo(({ nameCards, onEdit, onDelete }) => {
+  if (!nameCards || !nameCards.length) {
+    return <div>No cards</div>;
+  }
+
   return (
     <Wrapper>
       {nameCards.map((card) => {
@@ -24,6 +28,6 @@ const NameCardsList: React.FC<NameCardsListProps> = ({ nameCards, onEdit, onDele
       })}
     </Wrapper>
   );
-}
+});
 
 export default NameCardsList;
