@@ -5,7 +5,7 @@ import GlobalStyle from './styled.globalstyle';
 import AppHeader from './components/AppHeader';
 import AppNav from './components/AppNav';
 import NameCardsViewerContainer from './containers/NameCardsViewerContainer';
-import { NameCardCreateForm, NameCardUpdateForm } from './containers/NameCardEditFormContainer';
+import { NameCardForm } from './containers/NameCardEditFormContainer';
 import configureStore from './store/configureStore';
 
 const store = configureStore();
@@ -20,8 +20,8 @@ const App: React.FC = () => {
           <AppNav />
           <Switch>
             <Route path="/cards" exact component={NameCardsViewerContainer} />
-            <Route path="/cards/:id" component={NameCardUpdateForm} />
-            <Route path="/add" component={NameCardCreateForm} />
+            <Route path="/cards/:id" component={NameCardForm} />
+            <Route path="/add" component={NameCardForm} />
             <Redirect to="/cards" />
           </Switch>
         </>

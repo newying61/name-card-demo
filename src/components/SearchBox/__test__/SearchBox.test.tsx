@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, cleanup, fireEvent } from '@testing-library/react';
-import SearchBox from '../SearchBox';
+import SearchBox from '../';
 
 afterEach(cleanup);
 

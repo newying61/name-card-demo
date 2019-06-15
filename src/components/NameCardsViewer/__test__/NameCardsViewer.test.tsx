@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
-import NameCardsViewer from '../NameCardsViewer';
+import NameCardsViewer from '../';
 
 afterEach(cleanup);
 

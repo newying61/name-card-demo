@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
 import { NameCard } from '../../../types/NameCardType';
-import NameCardsList from '../NameCardsList';
+import NameCardsList from '../';
 
 afterEach(cleanup);
 

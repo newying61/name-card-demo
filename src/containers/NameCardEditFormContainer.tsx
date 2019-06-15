@@ -1,25 +1,13 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { withFormik } from 'formik';
-import * as yup from 'yup';
 import { updateNameCard, createNameCard } from '../ducks/nameCards';
 import { NameCard } from '../types/NameCardType';
 import { ApplicationState } from '../ducks';
 import { StateKey as nameCardsKey } from '../ducks/nameCards';
 import NameCardEditForm from '../components/NameCardEditForm';
 import { NameCard_Fields } from '../constants';
-
-// TODO: Add more validation
-export const FormFieldValidator = yup.object({
-    firstName: yup.string()
-      .required('First name is required.')
-      .matches(/^[A-Za-z']+$/ , 'Is not in correct format'),
-    lastName: yup.string()
-      .required('Last name is required.')
-      .matches(/^[A-Za-z']+$/ , 'Is not in correct format'),
-    dateOfBirth: yup.string()
-      .required('Date of birth is required.'),
-  });
+import FormFieldValidator from '../utils/formValidator';
 
 function findCardById(cards: NameCard[], cardId: string) {
   return cards.find((c) => c.id === cardId);
@@ -78,13 +66,7 @@ const formikFormHandler = withFormik({
   displayName: 'Name card form'
 });
 
-export const NameCardCreateForm = withRouter(connect(
+export const NameCardForm = withRouter(connect(
   mapStateToProps,
   mapDispatchToProps
 )(formikFormHandler(NameCardEditForm)));
-
-export const NameCardUpdateForm = withRouter(connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(formikFormHandler(NameCardEditForm)));
-

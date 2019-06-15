@@ -1,7 +1,7 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router';
 import { render, cleanup } from '@testing-library/react';
-import AppNav from '../AppNav';
+import AppNav from '../';
 
 afterEach(cleanup);
 

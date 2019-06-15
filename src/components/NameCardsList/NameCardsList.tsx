@@ -2,6 +2,7 @@ import React from 'react';
 import { NameCard as NameCardType } from '../../types/NameCardType';
 import { Wrapper } from './NameCardsList.style';
 import NameCard from '../NameCard';
+import { NOOP } from '../../constants';
 
 interface NameCardsListProps {
   nameCards: NameCardType[];
@@ -29,5 +30,10 @@ const NameCardsList: React.FC<NameCardsListProps> = React.memo(({ nameCards, onE
     </Wrapper>
   );
 });
+
+NameCardsList.defaultProps = {
+  onEdit: NOOP,
+  onDelete: NOOP
+}
 
 export default NameCardsList;

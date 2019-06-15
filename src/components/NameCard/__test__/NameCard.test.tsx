@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, cleanup, fireEvent } from '@testing-library/react';
-import NameCard from '../NameCard';
+import NameCard from '../';
 
 afterEach(cleanup);
 

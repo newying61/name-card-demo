@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
-import FormField from '../FormField';
+import FormField from '../';
 
 afterEach(cleanup);
 

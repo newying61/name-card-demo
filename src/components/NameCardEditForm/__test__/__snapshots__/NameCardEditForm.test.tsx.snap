@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppsConfig should render without crash 1`] = `
+<form
+  class=""
+  novalidate=""
+>
+  <div
+    class="form-group"
+  >
+    <label
+      class="form-label"
+      for="firstName-field"
+    >
+      First name
+    </label>
+    <input
+      class="sc-htpNat eODREG form-control"
+      id="firstName-field"
+      name="firstName"
+      placeholder=""
+      type="text"
+      value=""
+    />
+    <div
+      class="invalid-feedback"
+    />
+  </div>
+  <div
+    class="form-group"
+  >
+    <label
+      class="form-label"
+      for="lastName-field"
+    >
+      Last name
+    </label>
+    <input
+      class="sc-htpNat eODREG form-control"
+      id="lastName-field"
+      name="lastName"
+      placeholder=""
+      type="text"
+      value=""
+    />
+    <div
+      class="invalid-feedback"
+    />
+  </div>
+  <div
+    class="form-group"
+  >
+    <label
+      class="form-label"
+      for="dateOfBirth-field"
+    >
+      Date of birrth
+    </label>
+    <input
+      class="sc-htpNat eODREG form-control"
+      id="dateOfBirth-field"
+      name="dateOfBirth"
+      placeholder=""
+      type="date"
+      value=""
+    />
+    <div
+      class="invalid-feedback"
+    />
+  </div>
+  <div
+    class="sc-bwzfXH fpBhud"
+  >
+    <button
+      class="sc-bdVaJa jElpOZ btn btn-primary"
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      class="sc-bdVaJa jElpOZ btn btn-primary"
+      type="button"
+    >
+      Cancel
+    </button>
+  </div>
+</form>
+`;

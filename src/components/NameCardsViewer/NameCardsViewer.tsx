@@ -20,7 +20,8 @@ const NameCardsViewer: React.FC<NameCardsViewerProps> = ({ nameCards, history, d
   }
 
   const onDelete = (card: NameCard) => {
-    // TODO: Is it better to display a confirm screen??
+    // TODO: Display a confirm screen
+    // TODO: Find out where to set the focus after card deleted
     deleteNameCard(card.id);
   }
 
