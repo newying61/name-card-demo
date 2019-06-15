@@ -1,5 +1,6 @@
 import React from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
+import { StyledDd } from './NameCardItem.style';
 
 interface NameCardProps {
   fieldName: string;
@@ -10,7 +11,7 @@ const NameCardItem: React.FC<NameCardProps> = ({ fieldName, fieldValue }) => {
   return (
     <ListGroup.Item as="li">
       <dt>{fieldName}</dt>
-      <dd>{fieldValue}</dd>
+      <StyledDd>{fieldValue}</StyledDd>
     </ListGroup.Item>
   );
 }
