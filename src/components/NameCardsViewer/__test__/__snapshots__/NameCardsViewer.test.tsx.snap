@@ -14,7 +14,7 @@ exports[`AppNav should render without crash 1`] = `
       Search by name
     </label>
     <input
-      class="sc-bZQynM clTOgf form-control"
+      class="sc-gzVnrw kSznVF form-control"
       id="search-box"
       name="searchBox"
       placeholder=""

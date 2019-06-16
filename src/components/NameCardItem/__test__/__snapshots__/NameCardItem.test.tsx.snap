@@ -4,13 +4,15 @@ exports[`NameCardItem should render without crash 1`] = `
 <li
   class="list-group-item"
 >
-  <dt>
-    test
-  </dt>
-  <dd
-    class="sc-bdVaJa bNqPsR"
+  <span
+    class="sc-bdVaJa dlUoII"
   >
     test
-  </dd>
+  </span>
+  <span
+    class="sc-bwzfXH gaDNSi"
+  >
+    test
+  </span>
 </li>
 `;

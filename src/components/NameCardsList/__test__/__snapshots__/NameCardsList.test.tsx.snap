@@ -5,7 +5,7 @@ exports[`NameCardsList should render without crash when nameCards 1`] = `
   class="sc-bdVaJa eYASFs"
 >
   <div
-    class="sc-ifAKCX plnT"
+    class="sc-EHOje ipTDYQ"
   >
     <ul
       class="list-group list-group-flush"
@@ -13,51 +13,57 @@ exports[`NameCardsList should render without crash when nameCards 1`] = `
       <li
         class="list-group-item"
       >
-        <dt>
+        <span
+          class="sc-bwzfXH dfOYoI"
+        >
           First name
-        </dt>
-        <dd
-          class="sc-bwzfXH eIjNIe"
+        </span>
+        <span
+          class="sc-htpNat cDRxNX"
         >
           test
-        </dd>
+        </span>
       </li>
       <li
         class="list-group-item"
       >
-        <dt>
+        <span
+          class="sc-bwzfXH dfOYoI"
+        >
           Last name
-        </dt>
-        <dd
-          class="sc-bwzfXH eIjNIe"
+        </span>
+        <span
+          class="sc-htpNat cDRxNX"
         >
           test
-        </dd>
+        </span>
       </li>
       <li
         class="list-group-item"
       >
-        <dt>
+        <span
+          class="sc-bwzfXH dfOYoI"
+        >
           Date of birrth
-        </dt>
-        <dd
-          class="sc-bwzfXH eIjNIe"
+        </span>
+        <span
+          class="sc-htpNat cDRxNX"
         >
           2019/01/01
-        </dd>
+        </span>
       </li>
     </ul>
     <div
-      class="sc-bxivhb jcdCai"
+      class="sc-ifAKCX cisiRd"
     >
       <button
-        class="sc-htpNat eZpMOu btn btn-primary"
+        class="sc-bxivhb bNOZcI btn btn-primary"
         type="button"
       >
         Edit
       </button>
       <button
-        class="sc-htpNat eZpMOu btn btn-danger"
+        class="sc-bxivhb bNOZcI btn btn-danger"
         type="button"
       >
         Delete

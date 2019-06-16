@@ -1,17 +1,17 @@
 import React from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
-import { StyledDd } from './NameCardItem.style';
+import { StyledLabel, StyledValueSpan } from './NameCardItem.style';
 
-interface NameCardProps {
+interface NameCardItemProps {
   fieldName: string;
   fieldValue: string;
 }
 
-const NameCardItem: React.FC<NameCardProps> = ({ fieldName, fieldValue }) => {
+const NameCardItem: React.FC<NameCardItemProps> = ({ fieldName, fieldValue }) => {
   return (
     <ListGroup.Item as="li">
-      <dt>{fieldName}</dt>
-      <StyledDd>{fieldValue}</StyledDd>
+      <StyledLabel>{fieldName}</StyledLabel>
+      <StyledValueSpan>{fieldValue}</StyledValueSpan>
     </ListGroup.Item>
   );
 }

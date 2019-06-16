@@ -2,7 +2,7 @@
 
 exports[`AppNav should render without crash 1`] = `
 <div
-  class="sc-bxivhb jNfJqR"
+  class="sc-ifAKCX plnT"
 >
   <ul
     class="list-group list-group-flush"
@@ -10,51 +10,57 @@ exports[`AppNav should render without crash 1`] = `
     <li
       class="list-group-item"
     >
-      <dt>
+      <span
+        class="sc-bdVaJa dlUoII"
+      >
         First name
-      </dt>
-      <dd
-        class="sc-bdVaJa bNqPsR"
+      </span>
+      <span
+        class="sc-bwzfXH gaDNSi"
       >
         test
-      </dd>
+      </span>
     </li>
     <li
       class="list-group-item"
     >
-      <dt>
+      <span
+        class="sc-bdVaJa dlUoII"
+      >
         Last name
-      </dt>
-      <dd
-        class="sc-bdVaJa bNqPsR"
+      </span>
+      <span
+        class="sc-bwzfXH gaDNSi"
       >
         test
-      </dd>
+      </span>
     </li>
     <li
       class="list-group-item"
     >
-      <dt>
+      <span
+        class="sc-bdVaJa dlUoII"
+      >
         Date of birrth
-      </dt>
-      <dd
-        class="sc-bdVaJa bNqPsR"
+      </span>
+      <span
+        class="sc-bwzfXH gaDNSi"
       >
         2019-01-01
-      </dd>
+      </span>
     </li>
   </ul>
   <div
-    class="sc-htpNat kquAIx"
+    class="sc-bxivhb jcdCai"
   >
     <button
-      class="sc-bwzfXH yvzhI btn btn-primary"
+      class="sc-htpNat eZpMOu btn btn-primary"
       type="button"
     >
       Edit
     </button>
     <button
-      class="sc-bwzfXH yvzhI btn btn-danger"
+      class="sc-htpNat eZpMOu btn btn-danger"
       type="button"
     >
       Delete
