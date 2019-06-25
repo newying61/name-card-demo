@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { NameCard as NameCardType } from '../../types/NameCardType';
 import NameCardItem from '../NameCardItem';
 import ListGroup from 'react-bootstrap/ListGroup';
@@ -12,14 +12,14 @@ interface NameCardProps {
   onDelete: (card: NameCardType) => void
 }
 
-const NameCard: React.FC<NameCardProps> = ({ card, onEdit, onDelete }) => {
-  const onEditBtnClick = () => {
+const NameCard: React.FC<NameCardProps> = React.memo(({ card, onEdit, onDelete }) => {
+  const onEditBtnClick = useCallback(() => {
     onEdit(card);
-  }
+  }, [card, onEdit]);
 
-  const onDeleteBtnClick = () => {
+  const onDeleteBtnClick = useCallback(() => {
     onDelete(card);
-  }
+  }, [card, onDelete]);
 
   return (
     <Wrapper>
@@ -40,6 +40,6 @@ const NameCard: React.FC<NameCardProps> = ({ card, onEdit, onDelete }) => {
       </ButtonsWrapper>
     </Wrapper>
   );
-}
+});
 
 export default NameCard;

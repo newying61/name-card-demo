@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { NameCard } from '../../types/NameCardType';
 import { Wrapper } from './NameCardsViewer.style';
 import NameCardsList from '../NameCardsList';
@@ -15,15 +15,15 @@ const NameCardsViewer: React.FC<NameCardsViewerProps> = ({ nameCards, history, d
   // TODO: Find out whether we need to debounce the input
   const [searchTerm, setSearchTerm] = useState('');
 
-  const onEdit = (card: NameCard) => {
+  const onEdit = useCallback((card: NameCard) => {
     history.push(`/cards/${card.id}`);
-  }
+  }, [history]);
 
-  const onDelete = (card: NameCard) => {
+  const onDelete = useCallback((card: NameCard) => {
     // TODO: Display a confirm screen
     // TODO: Find out where to set the focus after card deleted
     deleteNameCard(card.id);
-  }
+  }, [deleteNameCard]);
 
   // TODO: If search term is used somewhere else, consider move it into store
   const list = nameCards.filter(
