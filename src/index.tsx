@@ -6,5 +6,4 @@ import App from './App';
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // TODO: Change to register after adding bootstrap css locally
-// Learn more from https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 // serviceWorker.unregister();
